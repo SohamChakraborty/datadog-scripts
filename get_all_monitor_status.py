@@ -17,6 +17,8 @@ print "Dumping all monitor details now"
 status = api.Monitor.get_all()
 print status 
 
+print "Get the id of the monitors only" 
+
 for item in map(lambda a: a['id'], status):
     print(item)
 
